@@ -66,23 +66,7 @@ function showImg1(e) {
 }
 
 //8
-// sendMessage({
-//   name: "zuka",
-//   email: "zukakhimshiashvili1@gmail.com",
-//   website: "website",
-//   message: "hello world!",
-// });
-// function sendMessage(message) {
-//   let request = new XMLHttpRequest();
-//   request.open("POST", "http://borjomi.loremipsum.ge/api/send-message");
-//   request.onloadend = function (data) {
-//     if (data.status == 1) {
-//       // alert("Thank you for getting in touch! We appreciate you contacting us.");
-//     }
-//   };
 
-//   request.send(message);
-// }
 const signupForm = document.querySelector("#user-signup-form");
 const first_name = document.querySelector("#first_name");
 const email = document.querySelector("#email");
@@ -138,3 +122,32 @@ function closeModal(modalSelector) {
   const modalNode = document.querySelector(modalSelector);
   modalNode.classList.remove("visible");
 }
+// skills section
+const skillsSection = document.querySelector(".sectionthreeblock");
+const progressBars = document.querySelectorAll(".skills");
+
+function showProgress() {
+  progressBars.forEach((progressBar) => {
+    const value = progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = `${value}%`;
+  });
+}
+
+function hideProgress() {
+  progressBars.forEach((p) => {
+    p.style.opacity = 0;
+    p.style.width = 0;
+  });
+}
+
+window.addEventListener("scroll", () => {
+  const sectionPos = skillsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 2;
+
+  if (sectionPos < screenPos) {
+    showProgress();
+  } else {
+    hideProgress();
+  }
+});
