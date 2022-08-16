@@ -66,20 +66,75 @@ function showImg1(e) {
 }
 
 //8
-sendMessage({
-  name: "zuka",
-  email: "zukakhimshiashvili1@gmail.com",
-  website: "website",
-  message: "hello world!",
-});
-function sendMessage(message) {
-  let request = new XMLHttpRequest();
-  request.open("POST", "http://borjomi.loremipsum.ge/api/send-message");
-  request.onloadend = function (data) {
-    if (data.status == 1) {
-      alert("Thank you for getting in touch! We appreciate you contacting us.");
-    }
-  };
+// sendMessage({
+//   name: "zuka",
+//   email: "zukakhimshiashvili1@gmail.com",
+//   website: "website",
+//   message: "hello world!",
+// });
+// function sendMessage(message) {
+//   let request = new XMLHttpRequest();
+//   request.open("POST", "http://borjomi.loremipsum.ge/api/send-message");
+//   request.onloadend = function (data) {
+//     if (data.status == 1) {
+//       // alert("Thank you for getting in touch! We appreciate you contacting us.");
+//     }
+//   };
 
-  request.send(message);
+//   request.send(message);
+// }
+const signupForm = document.querySelector("#user-signup-form");
+const first_name = document.querySelector("#first_name");
+const email = document.querySelector("#email");
+const website = document.querySelector("#website");
+const message = document.querySelector("#message");
+
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const userData = {
+    name: first_name.value,
+    email: email.value,
+    website: website.value,
+    message: message.value,
+  };
+  createUser(userData);
+  signupForm.reset();
+});
+async function createUser(userData) {
+  try {
+    const res = await fetch("http://borjomi.loremipsum.ge/api/send-message", {
+      method: "post",
+      body: JSON.stringify(userData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const dataFrom = await res.json();
+    console.log(dataFrom);
+    // await response.json();
+  } catch (e) {
+    console.log("Error - ", e);
+  }
+}
+
+const modalOpenBtn = document.querySelector("#button");
+const myModal = document.querySelector(".my-modal");
+
+modalOpenBtn.addEventListener("click", () => {
+  openModal(".my-modal");
+});
+
+function openModal(modalSelector) {
+  const modalNode = document.querySelector(modalSelector);
+  modalNode.classList.add("visible");
+
+  const closeBtn = modalNode.querySelector(".modal-close");
+  closeBtn.addEventListener("click", () => {
+    closeModal(modalSelector);
+  });
+}
+function closeModal(modalSelector) {
+  const modalNode = document.querySelector(modalSelector);
+  modalNode.classList.remove("visible");
 }
