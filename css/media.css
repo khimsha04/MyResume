@@ -1,0 +1,282 @@
+@media (max-width: 580px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    width: 375px;
+  }
+  .header-container {
+    height: 400px;
+    width: 100%;
+    max-width: 580px;
+  }
+  .header_top {
+    display: none;
+  }
+  #images {
+    display: none;
+  }
+  .header_bottom {
+    display: none;
+  }
+  .div1 {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 65px;
+    left: 40px;
+  }
+  .h4 {
+    font-size: 25px;
+    width: 100%;
+    max-width: 80px;
+  }
+  .h1 {
+    font-size: 30px;
+    width: 100%;
+    max-width: 276px;
+    height: 30px;
+  }
+  .slidephoto {
+    width: 375px;
+    height: 603px;
+    overflow: hidden;
+  }
+  .sectionsecondblock {
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    margin: 0;
+  }
+  .logos {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .section-container {
+    display: block;
+  }
+  .sectionfirstblock {
+    display: none;
+  }
+  .skills {
+    display: none;
+  }
+  .blockall {
+    margin: 100px;
+  }
+  .contactblock {
+    display: block;
+    height: 400px;
+    margin-top: 100px;
+    max-width: 360px;
+  }
+  .cellphoneimg {
+    margin-top: 10px;
+  }
+  .contactblockdiv {
+    margin-top: 40px;
+  }
+  .displayflex {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .sectionrecomend {
+    height: 500px;
+    display: block;
+  }
+  /* .slide {
+    display: block;
+    width: 195px;
+    margin-left: 170px;
+  } */
+  .sectionrecomend-p {
+    display: none;
+  }
+  .sectionrecomendimgback {
+    width: 195px;
+    border-radius: none;
+  }
+  .sectionrecomendimg {
+    width: 186px;
+  }
+  .margin50px {
+    margin: 10px;
+    width: 70px;
+    height: 80px;
+  }
+
+  .sectionrecomendspan1 {
+    margin-left: -10px;
+  }
+  .pxblockall {
+    margin-left: 0px;
+    display: block;
+    margin-top: 300px;
+  }
+
+  .sectionservices {
+    display: none;
+  }
+  .sectionrecomend01 {
+    width: 317px;
+    height: 330px;
+  }
+  .sectionrecomend01 .slide {
+    width: 60%;
+    height: 60%;
+  }
+  .LatestProjects {
+    margin-left: 10%;
+    width: 264px;
+  }
+  .LatestProjectsspan1 {
+    font-size: 30px;
+    margin-left: 13.5%;
+  }
+  .d-flex {
+    display: block;
+  }
+  .LatestProjectslist {
+    height: 300px;
+    margin-left: 8.5%;
+    width: 375px;
+  }
+  .divblock4,
+  .divblock5,
+  .divblock6 {
+    display: none;
+  }
+  .latestartciles {
+    display: none;
+  }
+  .rosateam {
+    margin-top: 600px;
+  }
+  .LatestArticlesspan {
+    font-size: 30px;
+    margin-left: 36.5%;
+  }
+  .displaynone {
+    display: none;
+  }
+  .contactus {
+    font-size: 35px;
+    color: black;
+    margin-left: 25%;
+  }
+  .lorem {
+    font-size: 20px;
+    margin-left: 0%;
+    color: black;
+  }
+  .user-message {
+    margin-left: 2%;
+    max-width: 450px;
+    display: none;
+  }
+  #button {
+    margin-left: 2%;
+  }
+  .lastp {
+    width: 200px;
+    height: 162px;
+    font-size: 17px;
+    color: #a5a5a5;
+    text-align: center;
+    margin-left: 30%;
+  }
+  .logos2 {
+    margin-left: 76px;
+    margin-top: 24px;
+    padding-left: 0%;
+  }
+  .copypaste {
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+    color: #a5a5a5;
+    margin-left: 30%;
+    padding-top: 2%;
+  }
+  .rosateamtext {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 135px;
+    height: 110px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px #e93656 solid;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .rosateamtext3 {
+    position: absolute;
+    top: 0;
+    left: 115px;
+    width: 135px;
+    height: 110px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px #e93656 solid;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .rosateamtext4 {
+    position: absolute;
+    top: 0;
+    left: 238px;
+    width: 135px;
+    height: 110px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px #e93656 solid;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .rosateamtext2,
+  .rosateamtext1 {
+    display: none;
+  }
+
+  .modal {
+    left: 30px;
+    position: absolute;
+    top: 5120px;
+    left: 0;
+    width: 375px;
+    height: 300px;
+    font-size: 20px;
+  }
+
+  .modal-content {
+    font-size: 20px;
+  }
+  #close-btn {
+    font-size: 10px;
+    margin-left: 130px;
+    margin-top: 20px;
+  }
+}
