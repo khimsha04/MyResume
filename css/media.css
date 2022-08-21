@@ -3,8 +3,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
-    width: 375px;
   }
   .header-container {
     height: 400px;
@@ -97,8 +95,7 @@
     display: none;
   }
   .sectionrecomendimgback {
-    width: 195px;
-    border-radius: none;
+    border: none;
   }
   .sectionrecomendimg {
     width: 186px;
